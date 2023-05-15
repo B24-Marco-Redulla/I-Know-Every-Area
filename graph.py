@@ -170,6 +170,7 @@ in the graph."""
     s += ' <div class="mermaid"> \n'
     s += 'flowchart LR \n'
     checked_edges = []
+    checked_vertices = []
     for e in self.edges():
       temp = True
       for item in checked_edges:
@@ -178,6 +179,13 @@ in the graph."""
           break
       if temp == True:
         s += e._vertex1.getLabel() + " <--> |" +  str(e._weight)  + "| "+ e._vertex2.getLabel() + "\n"
+        # add clickable links
+        if e._vertex1 not in checked_vertices:
+          s += "click " + e._vertex1.getLabel() + " callback" + " \"" + e._vertex1.getLabel() +"\"" + "\n"
+          checked_vertices.append(e._vertex1)
+        if e._vertex2 not in checked_vertices:
+          s += "click " + e._vertex2.getLabel() + " callback" + " \"" + e._vertex2.getLabel() +"\"" + "\n"
+          checked_vertices.append(e._vertex2)
         print(e)
         checked_edges.append(e)
 
