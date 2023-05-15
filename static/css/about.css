@@ -1,22 +1,27 @@
-body {
+html, body {
+    height: 100%;
     margin: 0;
-}
-
-#header-info {
-    font-family: "Futura PT ExtraBold";
-    font-size: 100px;
-    text-align: center;
-}
-
-#ikea-title {
-    font-family: "Futura PT ExtraBold";
-    font-size: 100px;
-    text-align: center;
-    color: #ffda1a;
-}
-
-#info-text {
-    font-family: "Futura PT";
-    font-size: 20px;
-    text-align: center;
-}
+    padding: 0;
+  }
+  
+  .parent {
+    overflow-y: hidden;
+  }
+  #header-info {
+      font-family: "Futura PT ExtraBold";
+      font-size: 100px;
+      text-align: center;
+  }
+  
+  #ikea-title {
+      font-family: "Futura PT ExtraBold";
+      font-size: 100px;
+      text-align: center;
+      color: #ffda1a;
+  }
+  
+  #info-text, #roomInfo {
+      font-family: "Futura PT";
+      font-size: 20px;
+      text-align: center;
+  }
