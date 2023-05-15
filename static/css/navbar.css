@@ -1,0 +1,36 @@
+.navbar {
+    overflow: hidden;
+    margin-bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar a{
+    float: right;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Futura PT';
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color:#f5cc00;
+    color: black;
+}
+
+.navbar a.active {
+    background-color:#003e8f;
+    color: white;
+}
+
+.navbar p{
+    float: left;
+    color: black;
+    padding:10px 10px;
+    margin:0;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Futura PT';
+    font-weight: bold;
+}
