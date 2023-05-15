@@ -181,14 +181,13 @@ in the graph."""
         s += e._vertex1.getLabel() + " <--> |" +  str(e._weight)  + "| "+ e._vertex2.getLabel() + "\n"
         # add clickable links
         if e._vertex1 not in checked_vertices:
-          s += "click " + e._vertex1.getLabel() + " callback" + " \"" + e._vertex1.getLabel() +"\"" + "\n"
+          s += "click " + e._vertex1.getLabel() + " href \"javascript:callback();\"" + "\n"
           checked_vertices.append(e._vertex1)
         if e._vertex2 not in checked_vertices:
-          s += "click " + e._vertex2.getLabel() + " callback" + " \"" + e._vertex2.getLabel() +"\"" + "\n"
+          s += "click " + e._vertex2.getLabel() + " href \"javascript:callback();\"" + "\n"
           checked_vertices.append(e._vertex2)
         print(e)
         checked_edges.append(e)
-
     s += '\n </div> '
     print(s)
     return s 
