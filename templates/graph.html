@@ -77,10 +77,11 @@
     <div class="w3-container w3-padding-32" style="width: 100%; height: 700px;">
         {{result |safe }}
         <script type="text/javascript">
+            
             var callback = function(x){
                 var location_title = x.replace(/-/g," ")
-                document.getElementById("location-title").innerHTML = String(location_title);
-            }
+                document.getElementById("location-title").innerHTML = String(location_title);            }
+            
         </script>
     </div>
 </div>
