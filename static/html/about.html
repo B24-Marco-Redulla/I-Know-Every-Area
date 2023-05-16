@@ -41,9 +41,14 @@
           function forwardImages() {
             currentImageIndex += 1
             // Set the src attribute of the displayedRoom element to the image at the current index.
-            if (currentImageIndex <= images.length) {
+            if (currentImageIndex < images.length) {
                 document.getElementById("displayedRoom").src = images[currentImageIndex];
                 document.getElementById("roomInfo").textContent = texts[currentImageIndex];
+            }
+            else {
+              currentImageIndex -= 1
+              document.getElementById("displayedRoom").src = images[currentImageIndex];
+              document.getElementById("roomInfo").textContent = texts[currentImageIndex];
             }
           }
           function backImages() {
@@ -52,6 +57,11 @@
             if (currentImageIndex >= 0) {
                 document.getElementById("displayedRoom").src = images[currentImageIndex];
                 document.getElementById("roomInfo").textContent = texts[currentImageIndex];
+            }
+            else {
+              currentImageIndex += 1
+              document.getElementById("displayedRoom").src = images[currentImageIndex];
+              document.getElementById("roomInfo").textContent = texts[currentImageIndex];
             }
           }
           </script>
