@@ -18,7 +18,13 @@
     <link rel="stylesheet" href="{{url_for('static', filename='/css/navbar.css')}}">
 
 <!-- Mermaid Diagrams -->   
-    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ 
+            startOnLoad: true,
+            securityLevel: 'loose' 
+        });
+    </script>
     
 <!-- Latex Math -->  
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -61,7 +67,6 @@
 <div class="w3-container w3-padding-32">
 
  <h1>Dijkstra's Single-source Shortest Path </h1>
- <p>The input is {{input}} and the start_label is {{start_label}}.</p>
 
  
     {{graph |safe}}
