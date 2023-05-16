@@ -12,40 +12,54 @@
   <div class="about-background">
     <div class="navbar">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Ikea_logo.svg/100px-Ikea_logo.svg.png" style="width: 5%; height: 5%; padding:9px 10px 0px 10px; float:left;">
-        <p>I KNOW EVERY AREA</p>
+        <p style="color: white;">I KNOW EVERY AREA</p>
         <a href="homepage.html" style="color: white;">HOME</a>
         <a class="active" href="#" style="color: white;">ABOUT</a>
         <a href="/" style="color: white;">MAP</a>
-        <a href="contact.html" style="color: white;">CONTACT</a>
+        <a href="contact.html" style="color: white;" >CONTACT</a>
     </div>
     <div style="padding:40px; width: 70%; margin:auto;">
         <h1 id="header-info" style:"position=relative";>WHAT IS <span id="ikea-title">IKEA?</span></h1>
         <p id="info-text">IKEA is a Swedish multinational conglomerate based in the Netherlands that designs and sells ready-to-use furniture, kitchen appliances, decoration, and many more things.</p>
         <p id="info-text">I Know Every Area was made to help customers find their way through the IKEA in the Mall of Asia in the fastest way possible, as it is not uncommon for customers to get lost in the maze-like floors and end up wasting a lot of time trying to get from one point to another.</p>
-        <p id="info-text" >Press right to see the various rooms of IKEA.</p>
+        <p id="info-text" >See the various items sold at IKEA below.</p>
         <img src="elevator.jpg" alt="Oops" style="height: 38%; width: 38%; float: left; padding: 20px;" id="displayedRoom">
         <p id="roomInfo" style="margin-left: 150px; margin-top: 150px;">The elevator going from 2nd floor to 3rd floor. </p>
         <script>
-        document.getElementById("displayedRoom").addEventListener("mouseover", function() {
-  // Do something when the mouse is over the image.
-  console.log("The mouse is over the image!");
-});
         var images = [
             "elevator.jpg",
             "entrance.jpg",
+            "clean.jpg",
+            "bed.jpg",
             "CP.jpg",
-            "living room.jpg",
-            "storage room.jpg"
+            "tv.jpg",
+            "couch.jpg",
+            "wall.jpg",
+            "storage room.jpg",
+            "storage.jpg",
+            "kitchen.jpg",
+            "dining.jpg",
+            "resto.jpg",
+            
+
+            
           ];
         var texts = [
             "The elevator going from 2nd floor to 3rd floor.",
             "The first thing you see when you enter the 4th floor; some rooms constructed using only IKEA furniture.",
-            "Marco's personal favorite; the Children's Playground (CP).",
-            "Another example room by IKEA; a café in the Living Room.",
-            "Need to store your storage better? Store your storage with things from the Storage Room at the IKEA store."
-
-
-
+            "This website is so clean it's like it took a shower at IKEA.",
+            "I slept for 5 hours this afternoon. Thank God I didn't have an IKEA mattress otherwise it would have been 10 hous.",
+            "Restore the joy you once had in life with items from Marco's personal favorite; the Children's IKEA.",
+            "Something you wouldn't expect at IKEA; full on TVs, also in the Living Room area.",
+            "What's a TV without a place to sit? Kind of stupid, so here's a preview of what IKEA furniture can make your living room look like.",
+            "Along with the TV, here's other beautiful pieces to hang up on the wall. behind it.",
+            "Need to store your storage better? Store your storage with things from the Storage Room at the IKEA store.",
+            "Closets and shelves are one of IKEA's signature products, looking super clean and extremely sturdy and functional.",
+            "If you dpon't like Swedish food, then you can also cook for yourself! We may not know what you are cooking, but we know you want to be cooking with IKEA kitchenware.",
+            "And you know the saying; you have your cake, now lie in it. A sample dining area in the Dining Area section of IKEA.",
+            "And obviously, after walking around and seeing all that, you need to recharge. Sit down and enjoy some delicious Swedish food at IKEA's Swedish Restaurant."
+            
+            
         ]
         var currentImageIndex = 0
           function forwardImages() {
@@ -75,8 +89,12 @@
             }
           }
           </script>
-        <button onclick="backImages()" style="font-size: 20px">backarrow.jpg</a>
-        <button onclick="forwardImages()" style="float: right; font-size: 20px">nextarrow.jpg</a>
+          <button class="image-button" onclick="backImages()">
+            <img src="left-arrow.png" alt="Image">
+          </button>
+          <button class="image-button" onclick="forwardImages()" style="float: right;">
+            <img src="right-arrow.png" alt="Image">
+          </button>
         
     </div>  
   </div>
