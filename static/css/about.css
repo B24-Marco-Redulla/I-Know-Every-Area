@@ -12,6 +12,20 @@ html, body {
     background-color: grey;
     background-blend-mode: multiply;
 }
+.image-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+    }
+  .image-button img {
+    width: 32px;
+    height: 32px;
+  }
   .parent {
     overflow-y: hidden;
   }

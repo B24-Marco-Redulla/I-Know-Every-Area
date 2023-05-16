@@ -1,0 +1,24 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .topo-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(topobg.avif);
+    background-size: cover;
+    background-color: grey;
+    background-blend-mode: multiply;
+}
+#header-info {
+    font-family: "Futura PT ExtraBold";
+    font-size: 50px;
+    color: white;
+}
+#info-text {
+    font-family: "Futura PT";
+    font-size: 20px;
+    color: white;
+}
