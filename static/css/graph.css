@@ -34,3 +34,8 @@ body {
     font-weight: bold; 
     color: #ffda1a;
 }
+
+#location-image {
+    width: 100%;
+    background-image: url('../assets/images/temp-picture.jpg');
+}

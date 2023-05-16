@@ -167,7 +167,7 @@ in the graph."""
     # add closing html code to the string
     # return the string
     s = ""
-    s += ' <div class="mermaid"> \n'
+    s += ' <div class="mermaid" style="height: 100%; width: 100%; transform: translate(0%, 30%);"> \n'
     s += """
     %%{
       init: {
