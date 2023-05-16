@@ -168,6 +168,15 @@ in the graph."""
     # return the string
     s = ""
     s += ' <div class="mermaid"> \n'
+    s += """
+    %%{
+      init: {
+        \'theme\':\'base\', 
+        \'themeVariables\': {
+          \'lineColor\':\'#FFFFFF\'
+        }
+      }
+    }%%""" + '\n'
     s += 'flowchart LR \n'
     checked_edges = []
     checked_vertices = []
