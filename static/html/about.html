@@ -9,13 +9,14 @@
     <title>About Us</title>
 </head>
 <body>
+  <div class="about-background">
     <div class="navbar">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Ikea_logo.svg/100px-Ikea_logo.svg.png" style="width: 5%; height: 5%; padding:9px 10px 0px 10px; float:left;">
         <p>I KNOW EVERY AREA</p>
-        <a href="homepage.html">HOME</a>
-        <a class="active" href="#">ABOUT</a>
-        <a href="/">MAP</a>
-        <a href="contact.html">CONTACT</a>
+        <a href="homepage.html" style="color: white;">HOME</a>
+        <a class="active" href="#" style="color: white;">ABOUT</a>
+        <a href="/" style="color: white;">MAP</a>
+        <a href="contact.html" style="color: white;">CONTACT</a>
     </div>
     <div style="padding:40px; width: 70%; margin:auto;">
         <h1 id="header-info" style:"position=relative";>WHAT IS <span id="ikea-title">IKEA?</span></h1>
@@ -32,10 +33,19 @@
         var images = [
             "elevator.jpg",
             "entrance.jpg",
+            "CP.jpg",
+            "living room.jpg",
+            "storage room.jpg"
           ];
         var texts = [
             "The elevator going from 2nd floor to 3rd floor.",
-            "The first thing you see when you enter the 4th floor; some rooms constructed using only IKEA furniture."
+            "The first thing you see when you enter the 4th floor; some rooms constructed using only IKEA furniture.",
+            "Marco's personal favorite; the Children's Playground (CP).",
+            "Another example room by IKEA; a café in the Living Room.",
+            "Need to store your storage better? Store your storage with things from the Storage Room at the IKEA store."
+
+
+
         ]
         var currentImageIndex = 0
           function forwardImages() {
@@ -65,10 +75,10 @@
             }
           }
           </script>
-        <button onclick="backImages()" style="font-size: 20px">back</a>
-        <button onclick="forwardImages()" style="float: right; font-size: 20px">next</a>
+        <button onclick="backImages()" style="font-size: 20px">backarrow.jpg</a>
+        <button onclick="forwardImages()" style="float: right; font-size: 20px">nextarrow.jpg</a>
         
     </div>  
-
+  </div>
 </body>
 </html>
