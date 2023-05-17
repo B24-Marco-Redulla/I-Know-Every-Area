@@ -57,7 +57,7 @@
 ### Project Feedback
 **Choose you DON'T KNOW (for objectivity), but might be interested in your project and demo your program. Indicate the following.**
 
-#### Member # 1 - CORPUZ, 
+#### Member # 1 - CORPUZ, Maria Angelina
 
 1. Kael Haravata
 
@@ -69,7 +69,7 @@
 
 
 
-#### Member # 2 - NAOE, Christian
+#### Member # 2 - NAOE, Christian Victor
 
 1. Gef Eigen Lim
 
@@ -83,13 +83,19 @@
 
 #### Member # 3 - SANSAET, Gia Cerise D.
 
-1. Who is your user?
+1. Interviewee #1: Jacob Dizon
 
-2. What is his/ her feedback?
+2. I like the user interface as it is interactive and really fun to play around with. Additionally, I enjoy organizing things, but I enjoy it more when the program does it for me.
 
-3. Reflect on the activity, your program, your likes, and the feedback you got. Write an essay on your reflection that is at least 1 paragraphs/ 4 sentences.
+1. Interviewee #2: Dawn Evangelista
+   
+2. The website has a professional feel, and all of its features are organized. I like how there are many pictures, which are very helpful. Finally, I think there should be bonus points because it's IKEA.
 
-4. What are things you are grateful for in our CS 5 course or in general?
+3. Considering that my interviewees were two grade 8 students I randomly approached in the library, it was a challenge getting them to understand why some parts of the application were there, such as the minimum spanning tree. However, thanks to the pictures and small injections of humor throughout the About and Contact pages, I was able to keep their attention for long enough. I admit that there are still parts that can be cleaned up, but all in all I'm happy about how the whole project turned out. 
+As a researcher, measuring IKEA for the graph seemed like an insurmountable task because of the failing GPS signal inside the store. Despite this, I was able to overcome it with the help of my groupmates and a new unit of measurement (Marco feet). While touring IKEA, I also witnessed firsthand something Sir Vlad taught us in Econ: stores plan their layouts specifically to entice you to stay inside longer and potentially buy more. Also, as a documenter, I learned more about how to manage  and evaluate large-scale projects such as these.
+
+4. Firstly, I'm grateful for Marco Redulla, who has been singlehandedly carrying my CS grade for an entire school year. Second, I would like to thank my parents for buying me a working laptop after the battery of my old one basically disintegrated. Third, I would like to thank Christian, Nina and Yohance for putting up with me. Sir Roy has also been a great help in dealing with the project. Finally, special thanks are in order to Benji's group for ordering everyone McDo. 
+
 
 
 #### Member # 4 - SARMIENTO, Yohance Hayden R.
