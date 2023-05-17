@@ -8,7 +8,7 @@ body {
     padding-top: 50px;
     width: 100%;
     background-image: url('../assets/images/IKEA-Swedish-Restaurant.jpg');
-    background-color: #0f0f0f;
+    background-color: #2b2b2b;
     background-size: 100%;
     background-blend-mode: multiply;
     height: 745px;
@@ -28,8 +28,32 @@ body {
 .flex-box > div {
     background-color: #0051ba;
     width: 15%;
-    padding: 20px;
+    padding: 10px 20px 10px 20px;
     margin: 0.8%;
     border-radius: 10px;
     text-align: center;
+    color: white;
+}
+
+.flex-box > div > h1 {
+    font-family: 'Futura PT ExtraBold';
+    font-size: 24px;
+    color: #ffda1a;
+}
+
+.flex-box > div > h3 {
+    font-family: 'Futura PT ExtraBold';
+    color: white;
+    margin: 4%;
+}
+
+.flex-box > div > img {
+    border-radius: 10px;
+    width: 95%;
+}
+
+.flex-box > div > p {
+    margin: 4%;
+    font-family: 'Futura PT';
+    font-size: 16px;
 }

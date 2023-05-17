@@ -173,7 +173,11 @@ in the graph."""
       init: {
         \'theme\':\'base\', 
         \'themeVariables\': {
-          \'lineColor\':\'#FFFFFF\'
+          \'primaryColor\': \'#0051BA\',
+          \'primaryBorderColor\': \'#FFDA1A\',
+          \'primaryTextColor\': \'#FFFFFF\',
+          \'lineColor\': \'#FFFFFF\',
+          \'secondaryColor\': \'#2B2B2B\'
         }
       }
     }%%""" + '\n'
