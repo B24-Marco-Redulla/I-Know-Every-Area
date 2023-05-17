@@ -70,26 +70,27 @@
 
  
     {{graph |safe}}
-
- <p>The following table is for the above graph.</p>
+    <div style="padding-top: 70px;">
+        <p>The following table displays the shortest distance from your starting point to other points.</p>
   
-    <table id="table_id" class="display w3-table" style="width:100%">
-        <thead>
-            <tr>
-                <th>Vertex</th>
-                <th>Shortest Path Cost</th>
-                <th>Parent</th>
-            </tr>
-        </thead>
-        <tbody>
-          {% for i in range(v_count) %}
-            <tr>
-                <td>{{result[i][0]}}</td>
-                <td>{{result[i][1]}}</td>
-                <td>{{result[i][2]}}</td>
-            </tr>
-          {% endfor %}
-    </table>
+        <table id="table_id" class="display w3-table" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Vertex</th>
+                    <th>Shortest Path Cost (ft)</th>
+                    <th>Parent</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for i in range(v_count) %}
+                <tr>
+                    <td>{{result[i][0]}}</td>
+                    <td>{{result[i][1]}}</td>
+                    <td>{{result[i][2]}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
 </div>
  
  

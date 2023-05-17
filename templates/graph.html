@@ -66,11 +66,11 @@
     <a href="{{url_for('static',filename='/html/contact.html')}}">CONTACT</a>
 </div>
 <div class="info-box">
-    <h1 id="location-title">Select a Location</h1>
+    <h1 id="location-title">Select a Location by clicking a node.</h1>
     <div>
-        <img src="../static/assets/images/temp-picture.jpg" style="width:50%">
+        <img id="location-image" style="width:100%">
     </div>
-    <p style="font-family: Futura PT; font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p id="location-information"></p>
 </div>
 <div class="graph-box">
     <h1 style="font-family: Futura PT; font-weight: bold;">IKEA 4th Floor: Showroom</h1>
@@ -78,8 +78,75 @@
         {{result |safe }}
         <script type="text/javascript">
             var callback = function(x){
-                var location_title = x.replace(/-/g," ")
-                document.getElementById("location-title").innerHTML = String(location_title);
+                var data = [{
+                    "IKEA-Locations": {
+                        "Entrance": {
+                            "name": "Entrance",
+                            "description": "Welcome to IKEA! This is the entrance to the Showroom, which contains sample living spaces. Happy shopping!",
+                            "image": "../static/assets/images/graph_photos/Entrance.jpg"
+                        },
+                        "Living-Room": {
+                            "name": "Living Room",
+                            "description": "Welcome to the Living Room! This room contains examples of how you can organize your IKEA furniture.",
+                            "image": "../static/assets/images/graph_photos/Living-Room.jpg"
+                        },
+                        "Childrens-IKEA": {
+                            "name": "Children's IKEA",
+                            "description": "Welcome to the Children's IKEA! From stuffed toys to LEGOs, it have everything that a child needs (or wants).",
+                            "image": "../static/assets/images/graph_photos/Childrens-IKEA.jpg"
+                        },
+                        "Swedish-Restaurant": {
+                            "name": "Swedish Restaurant",
+                            "description": "Hej! Are you hungry? So are we. Thankfully, there's a restaurant here serving more than just our favorite meatballs. Eat up!",
+                            "image": "../static/assets/images/graph_photos/Swedish-Restaurant.jpg"
+                        },
+                        "Living-Room-Storage": {
+                            "name": "Living Room Storage",
+                            "description": "Need cabinets and cupboards to cover your living room? Look no further! Visit the Living Room Storage today.",
+                            "image": "../static/assets/images/graph_photos/Living-Room-Storage.jpg"
+                        },
+                        "Workspaces": {
+                            "name": "Workspaces",
+                            "description": "Need inspiration for work stations that you can use to cram your next Computer Science project? This is the place for you!",
+                            "image": "../static/assets/images/graph_photos/Workspaces.jpg"
+                        },
+                        "Dining-Room": {
+                            "name": "Dining Room",
+                            "description": "Need a update to your dining room? While we can't fix your cooking, we can absolutely enhance your dining experience.",
+                            "image": "Null"
+                        },
+                        "Planning-Studio": {
+                            "name": "Planning Studio",
+                            "description": "Need someone to bring your ideas to life? Feel free to drop by the Planning Studio!",
+                            "image": "Null"
+                        },
+                        "Kitchen": {
+                            "name": "Kitchen",
+                            "description": "A beautiful home needs beautiful food to be served. Drop by and improve your kitchen today! (Cooking skills not included.)",
+                            "image": "../static/assets/images/graph_photos/Kitchen.jpg"
+                        },
+                        "Bathroom-Furniture": {
+                            "name": "Bathroom Furniture",
+                            "description": "Our products separate a good bath from a great bath. Stop by and get top-of-the-line bathroom furniture today!",
+                            "image": "../static/assets/images/graph_photos/Bathroom.jpg"
+                        },
+                        "Bedroom": {
+                            "name": "Bedroom",
+                            "description": "Sleepy? We got you covered, kinda. We got beds, blankets, pillows, and many more. Just make sure you don't sleep here.",
+                            "image": "../static/assets/images/graph_photos/Bedroom.jpg"
+                        },
+                        "Wardrobe-and-Storage": {
+                            "name": "Wardrobe And Storage",
+                            "description": "Need even more storage? Visit the Wardrobe and Storage section today! From closets to cabinets, we got you covered.",
+                            "image": "Null"
+                        }
+                    }
+                }];
+                
+                var location_data = data[0]["IKEA-Locations"][x];
+                document.getElementById("location-title").innerHTML = location_data["name"];
+                document.getElementById("location-image").src = location_data["image"];
+                document.getElementById("location-information").innerHTML = location_data["description"];
             }
         </script>
     </div>

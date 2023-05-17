@@ -39,3 +39,9 @@ body {
     width: 100%;
     background-image: url('../assets/images/temp-picture.jpg');
 }
+
+#location-information {
+    font-family: 'Futura PT'; 
+    font-size: 30px;
+    color: white;
+}
