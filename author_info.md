@@ -127,10 +127,18 @@ As a researcher, measuring IKEA for the graph seemed like an insurmountable task
 
 - Refer to /static/assets/group_photos :)
   
----
+***
 Hi sir! Thanks for teaching us this school year. Classes had just a right mix of fun and learning. Sadly there's no CS6 class so I won't be doing that much coding anymore. I hope that you'll meet even more energetic and crazy students :)
 
 -M.R.
 
 (p.s. here are all the pictures during our trip to IKEA: https://drive.google.com/drive/folders/185rgetLui1O6pCpD92pGPeZqaNtFbLiX)
+***
+Hi Sir! Thank you for teaching us cs with a smile even if its your first time handling a cs5 class. We wish you luck in all your future classes and endeavors and will keep your teachings in mind.
+
+-C.N.
+***
+Hi Sir! Thank you for all the advice in the palanca letter and for teaching us even though we may be unruly at times. Good luck next year!
+
+-G.S.
 ***
