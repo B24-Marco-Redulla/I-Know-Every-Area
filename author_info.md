@@ -137,3 +137,11 @@
 
 Paste a group logo, groufie, individual pics or avatars here so that I can better associate your work with you.  
 Feel free to add message to your teacher.  :) 
+
+---
+Hi sir! Thanks for teaching us this school year. Classes had just a right mix of fun and learning. Sadly there's no CS6 class so I won't be doing that much coding anymore. I hope that you'll meet even more energetic and crazy students :)
+
+-M.R.
+
+(p.s. here are all the pictures during our trip to IKEA: https://drive.google.com/drive/folders/185rgetLui1O6pCpD92pGPeZqaNtFbLiX)
+***
