@@ -22,7 +22,7 @@ body {
     overflow: hidden;
     float:left;
     background-image: url('../assets/images/IKEA-ShowRoom-Entrance.jpg');
-    background-color: gray;
+    background-color: rgb(50, 48, 48);
     background-blend-mode: multiply;
     color: white;
     background-size: 100%;

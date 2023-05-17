@@ -64,14 +64,14 @@
 </div>
 
 <!-- Start Content -->
-<div class="w3-container w3-padding-32">
-
- <h1>Dijkstra's Single-source Shortest Path </h1>
+<div class="w3-container w3-padding-32" style="background-image: url('../static/assets/images/IKEA-Workspace.jpg'); width: 100%; background-size: cover; background-color: rgb(50, 48, 48); background-blend-mode: multiply; color: white;">
+<br>
+ <h1 style="font-family: Futura PT ExtraBold">Dijkstra's Single-source Shortest Path </h1>
 
  
     {{graph |safe}}
     <div style="padding-top: 70px;">
-        <p>The following table displays the shortest distance from your starting point to other points.</p>
+        <p style="font-family: Futura PT; font-size: 20px;">The following table displays the shortest distance from your starting point to other points.</p>
   
         <table id="table_id" class="display w3-table" style="width:100%">
             <thead>
@@ -81,7 +81,7 @@
                     <th>Parent</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody style="color: black">
             {% for i in range(v_count) %}
                 <tr>
                     <td>{{result[i][0]}}</td>
